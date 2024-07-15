@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Details"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Full Name (Required) *"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Phone number (Required) *"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="+ Add Alternate Phone Number"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:hint="Pincode (Required) *"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use my location"
+                android:textStyle="bold"
+                android:background="@drawable/button_background" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="State (Required) *"
+            android:textStyle="bold"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="City (Required) *"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/road_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Road name, Area, Colony (Required) *"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="+ Add Nearby Famous Shop/Mall/Landmark"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:text="Type of address" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/home_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Home" />
+
+            <RadioButton
+                android:id="@+id/work_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Work" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Address"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

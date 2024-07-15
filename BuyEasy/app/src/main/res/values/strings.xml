@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BuyEasy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">"New and exciting items will be available here soon. Please check back later..."</string>
+</resources>
